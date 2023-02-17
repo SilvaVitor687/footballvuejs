@@ -1,26 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+      <ComponentsHeader />
+      <ComponentsSection />
+      <ComponentsFooter />
+
+  </div>
+  
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import ComponentsHeader from './components/ComponentsHeader.vue';
+  import ComponentsFooter from './components/ComponentsFooter.vue';
+  import ComponentsSection from './components/ComponentsSection.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ComponentsHeader,
+    ComponentsFooter,
+    ComponentsSection
+   
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto:wght@700&family=Tourney:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Raleway:wght@200;500;700&family=Roboto:wght@700&family=Tourney:wght@500&display=swap');
+ 
 </style>
