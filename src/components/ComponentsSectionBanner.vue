@@ -35,14 +35,14 @@ section {
 
 .container  .row .col-5:first-child {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../assets/Football_Prof.jpg');
+    background-image: url('/public/img/Football_Prof.jpg');
     background-repeat: no-repeat;    
     border-radius: 10px;
 }
 
 .container  .row .col-5:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../assets/Football_Centro.jpg');
+    background-image: url('/public/img/Football_Centro.jpg');
     background-repeat: no-repeat;
     background-size: 100%;    
     border-radius: 10px;

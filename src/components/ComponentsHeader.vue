@@ -4,7 +4,7 @@
         <div class="container">
             <nav class="navbar navbar-expand">
                 <a href="" class="link navbar-brand mr-auto">
-                    <img src="../assets/logo.png" alt="Footbal" class="img d-inline-block align-top" id="logo">
+                    <img src="img/logo.png" alt="Footbal" class="img d-inline-block align-top" id="logo">
                 </a>
 
                 <div class="links mr-2">

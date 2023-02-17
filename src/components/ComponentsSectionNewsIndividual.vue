@@ -3,13 +3,11 @@
     <div class="row">
 
         <div class="col-3">
-            <img src="../assets/News_1.jpg" alt="">
+            <img :src="('/img/' + this.imgName)" :alt="imgInfo">
         </div>
         <div class="col-9">
-            <h2>Hoje tem Clássico é guerra - 16/03/2023</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Cumque dolore saepe aperiam officiis, eos delectus eum ullam praesentium maiores tempora. 
-                Quaerat, cumque amet sunt tempora est molestias fugiat accusamus facere.</p>
+            <h2>{{ newsTitle }}</h2>
+            <p>{{ newsContent }}</p>
 
         </div>
     </div>
@@ -19,7 +17,27 @@
 <script>
 
     export default {
-        name: 'ComponentsSectionNewsIndividual'
+       
+        props: {
+            imgName: {
+                type: String,
+                required: true
+            },
+            imgInfo: {
+                type: String,
+                required: true
+            },
+            newsTitle: {
+                type: String,
+                required: true
+            },
+            newsContent: {
+                type: String,
+                required: true
+            }
+
+        }
+              
     }
 
 </script>
